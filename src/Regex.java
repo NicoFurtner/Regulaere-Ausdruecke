@@ -35,4 +35,10 @@ public class Regex {
     public void setRegex(String regex) {
         this.regex = regex;
     }
+    public boolean match(int index) {
+        return strings.get(index).matches(regex);
+    }
+    public boolean match(String s) {
+        return s.matches(regex);
+    }
 }
